@@ -1,0 +1,32 @@
+obj\x86\Debug\ResolveAssemblyReference.cache
+bin\x86\Debug\NumbeRun.exe
+bin\x86\Debug\NumbeRun.pdb
+obj\x86\Debug\NumbeRun.exe
+obj\x86\Debug\NumbeRun.pdb
+bin\x86\Debug\NumbeRun_music.xgs
+bin\x86\Debug\Wave Bank.xwb
+bin\x86\Debug\Sound Bank.xsb
+bin\x86\Debug\textures\crediti.xnb
+bin\x86\Debug\textures\faceset.xnb
+bin\x86\Debug\textures\femmina.xnb
+bin\x86\Debug\textures\fulltileset.xnb
+bin\x86\Debug\textures\gamescreen.xnb
+bin\x86\Debug\textures\gamescreen_intro.xnb
+bin\x86\Debug\textures\guida.xnb
+bin\x86\Debug\textures\maps.xnb
+bin\x86\Debug\textures\maschio.xnb
+bin\x86\Debug\textures\menu_background.xnb
+bin\x86\Debug\textures\menu_text.xnb
+bin\x86\Debug\textures\mostro1.xnb
+bin\x86\Debug\textures\mostro2.xnb
+bin\x86\Debug\textures\mostro3.xnb
+bin\x86\Debug\textures\mostro4.xnb
+bin\x86\Debug\textures\mostro5.xnb
+bin\x86\Debug\textures\TextSet.xnb
+bin\x86\Debug\textures\TextSet_Word.xnb
+bin\x86\Debug\textures\fulltileset_other.xnb
+obj\x86\Debug\NumbeRun_music.xml
+bin\x86\Debug\Mono.Security.dll
+bin\x86\Debug\Npgsql.dll
+bin\x86\Debug\textures\player_online.xnb
+bin\x86\Debug\textures\highscore_tab.xnb

@@ -1,0 +1,29 @@
+< Direttore Progetto:
+	Montalbano Marco
+
+< Programmatori:
+	Montalbano Marco
+	Brambilla Giacomo
+
+< Grafica:
+	Montalbano Marco
+
+< Game Design:
+	Montalbano Marco
+	Brambilla Giacomo
+
+< Collaboratori:
+	Montalbano Marco
+	Brambilla Giacomo
+	Brunelli Matteo
+	Straniero Luca
+	Belzoino Simone
+	Neri Salvatore
+	Curci Mirko
+	Cordara Edriano
+	Tavazzani Marco
+	Rizzo Mariacristina
+	Mirean Marius
+
+< Sviluppatori:
+	Three Thousand

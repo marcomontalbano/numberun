@@ -1,0 +1,9 @@
+-
+	PROBLEMA:	quando finiscono i tesori il gioco và in crach entrando in un loop infinito.
+	CAUSA:		i PhantRun continuamente cercano un tesoro, che in questo caso non esiste.
+	SOLUZIONE:	in caso di tesori=0, i PanthRun si muovono in modo casuale.
+
+-
+	PROBLEMA:	
+	CAUSA:		
+	SOLUZIONE:	

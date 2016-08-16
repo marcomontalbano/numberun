@@ -1,0 +1,26 @@
+*** TRUCCHI PRESENTI NEL GIOCO ***
+
+.< monster_hunter:		ferma i mostri.
+.< magnitude_10:		butta giù le mura.
+.< si_snaking:			abilita modalità Snake
+.< no_snaking:			disabilita modalità Snake
+.< santo_graal:			+1 vita. (MAX 999)
+.< i_want_to_become_hulk:	invincibilità.
+.< chelling:			+1 crystal potion. (MAX 999)
+.< arriva_l_apocalisse:		distrugge tutto.
+.< self_destruction:		autodistruzione.
+.< evil_power:			aumenta la velocità di gioco.
+.< normal_velocity:		ripristina la velocità di gioco.
+.< slow_motion:			diminuisce la velocità di gioco.
+.< rubber_one_piece:		prendi tutti i 2 della mappa.
+.< non_ho_tempo_da_perdere:	salta il livello (attenzione, non funziona per i livelli bonus).
+.< masochista_edition:		porta a 25 il numero dei mostri.
+.< please_can_i_drink:		elimina tutte le pozze d'acqua.
+.< simmetry_direction:		inverte i tasti di movimento.
+.< reveal_my_way: 		riempie di 7 la mappa, spianandoti però la strada.
+.< clip_mode:			FiveRun passa attraverso ai muri.
+.< can_i_choose_motion:		Imposti te la velocità del gioco, usando i tasti '+' e '-'.
+< amico_Friz_ho_bisogno_di_te: 	arriva in tuo aiuto l'amico 5, che si
+				autodistruggerà a contatto con i mostri. (M.10)
+
+

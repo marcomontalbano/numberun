@@ -1,0 +1,10 @@
+# default
+Thumbs.db*
+
+# NumbeRun
+High Score.txt
+
+# Dev-C++ 5.7.0 compiler
+*.win
+*.layout
+*.o

@@ -1,0 +1,659 @@
+unit A2;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Spin, ExtCtrls, Buttons, ExtDlgs;
+
+type
+  TForm2 = class(TForm)
+    Bevel9: TBevel;
+    Bevel10: TBevel;
+    Bevel8: TBevel;
+    Image_Selection: TImage;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    SpeedButton4: TSpeedButton;
+    SpeedButton5: TSpeedButton;
+    SpeedButton6: TSpeedButton;
+    Label1: TLabel;
+    Bevel1: TBevel;
+    Label2: TLabel;
+    Label3: TLabel;
+    SpinEdit_X: TSpinEdit;
+    SpinEdit_Y: TSpinEdit;
+    Label4: TLabel;
+    Bevel11: TBevel;
+    Bevel2: TBevel;
+    Image1: TImage;
+    Bevel3: TBevel;
+    Image2: TImage;
+    Bevel4: TBevel;
+    Image4: TImage;
+    Bevel5: TBevel;
+    Image3: TImage;
+    Bevel6: TBevel;
+    Image5: TImage;
+    Bevel7: TBevel;
+    Image6: TImage;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Label9: TLabel;
+    Label10: TLabel;
+    Label11: TLabel;
+    Memo_Cplusplus: TMemo;
+    Label12: TLabel;
+    SpeedButton8: TSpeedButton;
+    SpeedButton9: TSpeedButton;
+    SpeedButton10: TSpeedButton;
+    Label13: TLabel;
+    Label14: TLabel;
+    OpenPictureDialog1: TOpenPictureDialog;
+    SavePictureDialog1: TSavePictureDialog;
+    Bevel12: TBevel;
+    SpeedButton7: TSpeedButton;
+    SpeedButton11: TSpeedButton;
+    Bevel13: TBevel;
+    Label15: TLabel;
+    Label16: TLabel;
+    Label17: TLabel;
+    Label18: TLabel;
+    Label19: TLabel;
+    Label20: TLabel;
+    SpeedButton12: TSpeedButton;
+    SpinEdit_Mostri: TSpinEdit;
+    Label21: TLabel;
+    ComboBox1: TComboBox;
+    SpeedButton13: TSpeedButton;
+    Label22: TLabel;
+    Label23: TLabel;
+    Bevel14: TBevel;
+    Bevel15: TBevel;
+    Image7: TImage;
+    Image8: TImage;
+    Image9: TImage;
+    SpeedButton14: TSpeedButton;
+    CheckBox_Selettore: TCheckBox;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure SpeedButton3Click(Sender: TObject);
+    procedure SpeedButton4Click(Sender: TObject);
+    procedure SpeedButton5Click(Sender: TObject);
+    procedure SpeedButton6Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure SpeedButton7Click(Sender: TObject);
+    procedure SpeedButton8Click(Sender: TObject);
+    procedure SpeedButton10Click(Sender: TObject);
+    procedure SpeedButton9Click(Sender: TObject);
+    procedure SpeedButton11Click(Sender: TObject);
+    procedure SpeedButton12Click(Sender: TObject);
+    procedure Memo_CplusplusKeyPress(Sender: TObject; var Key: Char);
+    procedure ComboBox1KeyPress(Sender: TObject; var Key: Char);
+    procedure SpeedButton13Click(Sender: TObject);
+    procedure SpeedButton14Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TForm2;
+  Title_Form1: string;
+
+implementation
+
+uses A1, A3;
+
+{$R *.dfm}
+
+//Procedura il file *.bmp aperto
+procedure Bitmap_Name(tipo: string);
+var
+        i, j: integer;
+        path: string;
+begin
+        Form1.Edit_Bitmap.Text := '';
+        If (tipo = 'O') Then
+          path := Form2.OpenPictureDialog1.FileName;
+        If (tipo = 'S') Then
+          path := Form2.SavePictureDialog1.FileName;
+        path := path + '?';
+        i := 0;
+        repeat
+                i := i + 1;
+        until (path[i] = '?');
+        j := i;
+        repeat
+                i := i - 1;
+        until (path[i] = '\');
+        i := i + 1;
+        repeat
+                Form1.Edit_Bitmap.Text := Form1.Edit_Bitmap.Text + path[i];
+                i := i + 1;
+        until (j = i);
+end;
+
+procedure TForm2.SpeedButton1Click(Sender: TObject);
+begin
+  Form2.Image_Selection.Picture.Bitmap := Form2.SpeedButton1.Glyph;
+  Form1.Show;
+end;
+
+procedure TForm2.SpeedButton2Click(Sender: TObject);
+begin
+  Form2.Image_Selection.Picture.Bitmap := Form2.SpeedButton2.Glyph;
+  Form1.Show;
+end;
+
+procedure TForm2.SpeedButton3Click(Sender: TObject);
+begin
+  Form2.Image_Selection.Picture.Bitmap := Form2.SpeedButton3.Glyph;
+  Form1.Show;
+end;
+
+procedure TForm2.SpeedButton4Click(Sender: TObject);
+begin
+  Form2.Image_Selection.Picture.Bitmap := Form2.SpeedButton4.Glyph;
+  Form1.Show;
+end;
+
+procedure TForm2.SpeedButton5Click(Sender: TObject);
+begin
+  Form2.Image_Selection.Picture.Bitmap := Form2.SpeedButton5.Glyph;
+  Form1.Show;
+end;
+
+procedure TForm2.SpeedButton6Click(Sender: TObject);
+begin
+  Form2.Image_Selection.Picture.Bitmap := Form2.SpeedButton6.Glyph;
+  Form1.Show;
+end;
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+  //Impostazioni del ComboBox1
+  Form2.ComboBox1.ItemIndex := 0;
+  //Titolo della form1
+  Title_Form1 := 'Editor Map for C++';
+  //Posizione della Form
+  Form2.Top := Form1.Top + Form1.Height + 1;
+  Form2.Left := Form1.Left;
+  //Grandezza della form
+  Form2.Width := Form1.Width;
+  //Setta 'DIALOGS'
+  Form2.OpenPictureDialog1.InitialDir := Form1.Edit_Path.Text + '\';
+  Form2.SavePictureDialog1.InitialDir := Form1.Edit_Path.Text + '\';
+end;
+
+procedure TForm2.SpeedButton7Click(Sender: TObject);
+var
+  h: integer;
+begin
+        //Cancellazione MEMO
+        Form2.Memo_Cplusplus.Clear;
+        Form2.Memo_Cplusplus.Lines.Append('');
+        //Impostazioni del cursore (bevel11)
+        Form1.Image_MIRINO.Left := 0;
+        Form1.Image_MIRINO.Top := 0;
+        //Reset degli indici COORDINATE
+        Form2.SpinEdit_X.Value := 1;
+        Form2.SpinEdit_Y.Value := 1;
+        //Impostazioni form3
+        Form3.SpinEdit1.Value := 0;
+        Form3.SpinEdit2.Value := 0;
+        Form3.SpinEdit3.Value := 0;
+        Form3.SpinEdit4.Value := 0;
+        Form3.SpinEdit5.Value := 0;
+        Form3.SpinEdit6.Value := 0;
+        Form3.SpinEdit7.Value := 0;
+        Form3.SpinEdit8.Value := 0;
+        Form3.Close;
+
+      //Scansione della mappa per il generamento codice C++
+      if ((Form2.ComboBox1.Text = 'Normale') or (Form2.ComboBox1.Text = 'Bonus')) Then
+      Begin
+        h := 0;
+        repeat
+          h := h + 1;
+          Form2.Memo_Cplusplus.Lines.Append('o' + IntToStr(h) + ' = 0;');
+          Form2.Memo_Cplusplus.Lines.Append('k' + IntToStr(h) + ' = 0;');
+        until (h = Form2.SpinEdit_Mostri.Value);
+
+        //Setta il valere di 'h' a 1
+        h := 1;
+
+        repeat
+          repeat
+            //Strada '0'
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton1.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form3.SpinEdit1.Value := Form3.SpinEdit1.Value + 1;
+            end;
+            //Mura '7'
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton2.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 7;');
+              Form3.SpinEdit2.Value := Form3.SpinEdit2.Value + 1;
+            end;
+            //Protagonista '5'
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton3.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('//Coordinate del protagonista');
+              Form2.Memo_Cplusplus.Lines.Append('i = ' + IntToStr(Form2.SpinEdit_Y.Value) + ';');
+              Form2.Memo_Cplusplus.Lines.Append('j = ' + IntToStr(Form2.SpinEdit_X.Value) + ';');
+              Form2.Memo_Cplusplus.Lines.Append('A[i][j] = 5;');
+              Form3.SpinEdit3.Value := Form3.SpinEdit3.Value + 1;
+            end;
+            //Mostri '8'
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton4.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('//Coordinate del mostro ' + IntToStr(h));
+              Form2.Memo_Cplusplus.Lines.Append('o' + IntToStr(h) + ' = ' + IntToStr(Form2.SpinEdit_Y.Value) + ';');
+              Form2.Memo_Cplusplus.Lines.Append('k' + IntToStr(h) + ' = ' + IntToStr(Form2.SpinEdit_X.Value) + ';');
+              Form2.Memo_Cplusplus.Lines.Append('A[o' + IntToStr(h) + '][k' + IntToStr(h) + '] = 8;');
+              h := h + 1;
+              Form3.SpinEdit4.Value := Form3.SpinEdit4.Value + 1;
+            end;
+            //Tesori '2'
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton5.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 2;');
+              Form3.SpinEdit5.Value := Form3.SpinEdit5.Value + 1;
+            end;
+            //Ostacoli '1'
+            if (IntToStr(Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = '15780518') then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 1;');
+              Form3.SpinEdit6.Value := Form3.SpinEdit6.Value + 1;
+            end;
+            //Fine Gioco '9'
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton12.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('//Coordinata del fine gioco');
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 9;');
+              Form3.SpinEdit7.Value := Form3.SpinEdit7.Value + 1;
+            end;
+            //Crystal Potion '9'
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton13.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 3;');
+              Form3.SpinEdit8.Value := Form3.SpinEdit8.Value + 1;
+            end;
+
+            Form2.SpinEdit_X.Value := Form2.SpinEdit_X.Value + 1;
+          until (Form2.SpinEdit_X.Value = A1.SpinEdit_X_MAX + 1);
+          Form2.SpinEdit_X.Value := 1;
+          Form2.SpinEdit_Y.Value := Form2.SpinEdit_Y.Value + 1;
+        until (Form2.SpinEdit_Y.Value = A1.SpinEdit_Y_MAX + 1);
+
+        //Numero mostri presenti nella mappa
+        Form2.Memo_Cplusplus.Lines.Append('//Numero di mostri presenti nella mappa');
+        Form2.Memo_Cplusplus.Lines.Append('mostri = ' + inttostr(Form3.SpinEdit4.Value) + ';');
+
+      End;
+
+      if (Form2.ComboBox1.Text = 'Testo') Then
+      Begin
+        repeat
+          repeat
+            //Marrone
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton1.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 0;');
+            end;
+            //Grigio
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton2.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 7;');
+            end;
+            //Fucsia
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton3.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 5;');
+            end;
+            //Verde
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton4.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 8;');
+            end;
+            //Giallo
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton5.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 2;');
+            end;
+            //Azzurro
+            if (IntToStr(Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = '15780518') then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 1;');
+            end;
+            //Viola
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton12.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 9;');
+            end;
+            //Bianco
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton13.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 3;');
+            end;
+            
+            Form2.SpinEdit_X.Value := Form2.SpinEdit_X.Value + 1;
+          until (Form2.SpinEdit_X.Value = A1.SpinEdit_X_MAX + 1);
+          Form2.SpinEdit_X.Value := 1;
+          Form2.SpinEdit_Y.Value := Form2.SpinEdit_Y.Value + 1;
+        until (Form2.SpinEdit_Y.Value = A1.SpinEdit_Y_MAX + 1);
+
+      End;
+
+      if (Form2.ComboBox1.Text = 'Grafica') Then
+      Begin
+        repeat
+          repeat
+            //Marrone
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton1.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 10;');
+            end;
+            //Grigio
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton12.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 9;');
+            end;
+            //Fucsia
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton4.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 8;');
+            end;
+            //Verde
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton2.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 7;');
+            end;
+            //Giallo
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Graphics.clOlive) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 6;');
+            end;
+            //Azzurro
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton3.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 5;');
+            end;
+            //Viola
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Graphics.clMaroon) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 4;');
+            end;
+            //Bianco
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton13.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 3;');
+            end;
+            //Bianco
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Form2.SpeedButton5.Glyph.Canvas.Pixels[2,2]) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 2;');
+            end;
+            //Bianco
+            if (IntToStr(Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = '15780518') then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 1;');
+            end;
+            //Bianco
+            if ((Form1.Image_Map.Canvas.Pixels[((Form2.SpinEdit_X.Value * 8) - 7),((Form2.SpinEdit_Y.Value * 8) - 7)]) = Graphics.clBlue) then
+            begin
+              Form2.Memo_Cplusplus.Lines.Append('A[' + IntToStr(Form2.SpinEdit_Y.Value) + '][' + IntToStr(Form2.SpinEdit_X.Value) + '] = 0;');
+            end;
+            
+            Form2.SpinEdit_X.Value := Form2.SpinEdit_X.Value + 1;
+          until (Form2.SpinEdit_X.Value = A1.SpinEdit_X_MAX + 1);
+          Form2.SpinEdit_X.Value := 1;
+          Form2.SpinEdit_Y.Value := Form2.SpinEdit_Y.Value + 1;
+        until (Form2.SpinEdit_Y.Value = A1.SpinEdit_Y_MAX + 1);
+
+      End;
+
+
+        //Impostazioni del cursore (bevel11)
+        Form1.Image_MIRINO.Left := 0;
+        Form1.Image_MIRINO.Top := 0;
+        //Reset degli indici COORDINATE
+        Form2.SpinEdit_X.Value := 1;
+        Form2.SpinEdit_Y.Value := 1;
+
+  //Controllo di errori
+    //Modalità normale
+    If (Form2.ComboBox1.Text = 'Normale') Then
+    Begin
+      If ((Form3.SpinEdit3.Value <> 1) or (Form3.SpinEdit4.Value > Form2.SpinEdit_Mostri.Value) or (Form3.SpinEdit7.Value <> 1) or (Form3.SpinEdit5.Value < 1)) Then
+      Begin
+        //Protagonista
+        If (Form3.SpinEdit3.Value <> 1) Then
+        begin
+            Form2.Memo_Cplusplus.Clear;
+            Form3.Close;
+            Application.MessageBox('Posizionare 1 ''protagonista'' sulla mappa', pchar(Form1.Caption), Windows.MB_ICONERROR);
+        end;
+        //Fine Gioco
+        If (Form3.SpinEdit7.Value <> 1) Then
+        begin
+            Form2.Memo_Cplusplus.Clear;
+            Form3.Close;
+            Application.MessageBox('Posizionare 1 ''fine gioco'' sulla mappa', pchar(Form1.Caption), Windows.MB_ICONERROR);
+        end;
+        //Tesori
+        If (Form3.SpinEdit7.Value < 1) Then
+        begin
+            Form2.Memo_Cplusplus.Clear;
+            Form3.Close;
+            Application.MessageBox('Posizionare almeno 1 ''tesori'' sulla mappa', pchar(Form1.Caption), Windows.MB_ICONERROR);
+        end;
+        //Mostri
+        If (Form3.SpinEdit4.Value > Form2.SpinEdit_Mostri.Value) Then
+        begin
+            Form2.Memo_Cplusplus.Clear;
+            Form3.Close;
+            Application.MessageBox(pchar('Posizionare massimo ' + inttostr(Form2.SpinEdit_Mostri.Value) + ' ''mostri'' sulla mappa'), pchar(Form1.Caption), Windows.MB_ICONERROR);
+        end;
+      End else
+      Begin
+        //Copia il codice generato negli appunti
+        Form2.Memo_Cplusplus.SelectAll;
+        Form2.Memo_Cplusplus.CopyToClipboard;
+        Form2.Memo_Cplusplus.SelectAll;
+        //Impostazioni finali
+        Form3.Show;
+        Application.MessageBox('Codice generato correttamente', pchar(Form1.Caption), Windows.MB_ICONASTERISK);
+      End;
+    End;
+    
+    //Modalità bonus
+    If (Form2.ComboBox1.Text = 'Bonus') Then
+    Begin
+      If ((Form3.SpinEdit3.Value <> 1) or (Form3.SpinEdit4.Value > 0) or (Form3.SpinEdit7.Value > 0) or (Form3.SpinEdit5.Value > 0)) Then
+      Begin
+        //Protagonista
+        If (Form3.SpinEdit3.Value <> 1) Then
+        begin
+            Form2.Memo_Cplusplus.Clear;
+            Form3.Close;
+            Application.MessageBox('Posizionare 1 ''protagonista'' sulla mappa', pchar(Form1.Caption), Windows.MB_ICONERROR);
+        end;
+        //Fine gioco
+        If (Form3.SpinEdit7.Value > 0) Then
+        begin
+            Form2.Memo_Cplusplus.Clear;
+            Form3.Close;
+            Application.MessageBox('Eliminare i ''fine gioco'' dalla mappa (modalità bonus)', pchar(Form1.Caption), Windows.MB_ICONERROR);
+        end;
+        //Tesori
+        If (Form3.SpinEdit5.Value > 0) Then
+        begin
+            Form2.Memo_Cplusplus.Clear;
+            Form3.Close;
+            Application.MessageBox('Eliminare i ''tesori'' dalla mappa (modalità bonus)', pchar(Form1.Caption), Windows.MB_ICONERROR);
+        end;
+        //Mostri
+        If (Form3.SpinEdit4.Value > 0) Then
+        begin
+            Form2.Memo_Cplusplus.Clear;
+            Form3.Close;
+            Application.MessageBox(pchar('Eliminare i ''mostri'' dalla mappa (modalità bonus)'), pchar(Form1.Caption), Windows.MB_ICONERROR);
+        end;
+      End else
+      Begin
+        //Copia il codice generato negli appunti
+        Form2.Memo_Cplusplus.SelectAll;
+        Form2.Memo_Cplusplus.CopyToClipboard;
+        Form2.Memo_Cplusplus.SelectAll;
+        //Impostazioni finali
+        Form3.Show;
+        Application.MessageBox('Codice generato correttamente', pchar(Form1.Caption), Windows.MB_ICONASTERISK);
+      End;
+    End;
+
+    //Modalità testo
+    If (Form2.ComboBox1.Text = 'Testo') Then
+    Begin
+        //Copia il codice generato negli appunti
+        Form2.Memo_Cplusplus.SelectAll;
+        Form2.Memo_Cplusplus.CopyToClipboard;
+        Form2.Memo_Cplusplus.SelectAll;
+        //Impostazioni finali
+        Application.MessageBox('Codice generato correttamente', pchar(Form1.Caption), Windows.MB_ICONASTERISK);
+
+    End;
+
+
+end;
+
+procedure TForm2.SpeedButton8Click(Sender: TObject);
+begin
+  Form2.Memo_Cplusplus.Lines.Text := SysUtils.IntToStr(Form1.Image_Map.Canvas.Pixels[1,1]);
+end;
+
+procedure TForm2.SpeedButton10Click(Sender: TObject);
+begin
+  //Setta impostazioni per il salvataggio
+  If not(Form2.OpenPictureDialog1.FileName = '') Then
+    Form2.SavePictureDialog1.FileName := Form2.OpenPictureDialog1.FileName;
+
+  //Salvataggio intelligente
+  If Form2.SavePictureDialog1.Execute Then
+    If ((SysUtils.FileExists(Form2.SavePictureDialog1.FileName)) or (SysUtils.FileExists(Form2.SavePictureDialog1.FileName + '.bmp'))) Then
+    begin
+      If Application.MessageBox('Il file esiste già, sovrascrivere?', 'Salva playlist', Windows.MB_YESNO) = Windows.ID_YES Then
+      begin
+        If (SysUtils.FileExists(Form2.SavePictureDialog1.FileName + '.bmp')) Then
+          Form1.Image_Map.Picture.SaveToFile(Form2.SavePictureDialog1.FileName + '.bmp') else
+            Form1.Image_Map.Picture.SaveToFile(Form2.SavePictureDialog1.FileName);
+        //Nome della form1
+        Bitmap_Name('S');
+        Form1.Caption := Title_Form1 + ' - ' + Form1.Edit_Bitmap.Text;
+      End else
+        Form2.SpeedButton10.Click;
+    end else
+    begin
+      Form1.Image_Map.Picture.SaveToFile(Form2.SavePictureDialog1.FileName + '.bmp');
+      //Nome della form1
+      Bitmap_Name('S');
+      Form1.Caption := Title_Form1 + ' - ' + Form1.Edit_Bitmap.Text;
+    end;
+end;
+
+procedure TForm2.SpeedButton9Click(Sender: TObject);
+begin
+  If Form2.OpenPictureDialog1.Execute Then
+  begin
+    Form1.Image_Map.Picture.LoadFromFile(Form2.OpenPictureDialog1.FileName);
+    Form2.Memo_Cplusplus.Clear;
+    Form3.SpinEdit1.Value := 0;
+    Form3.SpinEdit2.Value := 0;
+    Form3.SpinEdit3.Value := 0;
+    Form3.SpinEdit4.Value := 0;
+    Form3.SpinEdit5.Value := 0;
+    Form3.SpinEdit6.Value := 0;
+    Form3.SpinEdit7.Value := 0;
+    Form3.SpinEdit8.Value := 0;
+    Form3.Close;
+    //Nome della form1
+    Bitmap_Name('O');
+    Form1.Caption := Title_Form1 + ' - ' + Form1.Edit_Bitmap.Text;
+  end;
+end;
+
+procedure TForm2.SpeedButton11Click(Sender: TObject);
+begin
+  //Impostazioni del salvataggio
+  Form2.SavePictureDialog1.FileName := '';
+  //Caricamento immagine di Default
+  Form1.Image_Map.Picture.Bitmap.LoadFromResourceName(HInstance, 'DEFAULT');
+  //Cancellazione MEMO
+  Form2.Memo_Cplusplus.Clear;
+  //Impostazioni del cursore (bevel11)
+  Form1.Image_MIRINO.Left := 0;
+  Form1.Image_MIRINO.Top := 0;
+  //Reset degli indici COORDINATE
+  Form2.SpinEdit_X.Value := 1;
+  Form2.SpinEdit_Y.Value := 1;
+  //Mostra form1
+  Form1.Show;
+  //Impostazioni form3
+  Form3.SpinEdit1.Value := 0;
+  Form3.SpinEdit2.Value := 0;
+  Form3.SpinEdit3.Value := 0;
+  Form3.SpinEdit4.Value := 0;
+  Form3.SpinEdit5.Value := 0;
+  Form3.SpinEdit6.Value := 0;
+  Form3.SpinEdit7.Value := 0;
+  Form3.SpinEdit8.Value := 0;
+  Form3.Close;
+  //Impostazioni form1
+  Form1.Caption := Title_Form1;
+end;
+
+procedure TForm2.SpeedButton12Click(Sender: TObject);
+begin
+  Form2.Image_Selection.Picture.Bitmap := Form2.SpeedButton12.Glyph;
+  Form1.Show;
+end;
+
+procedure TForm2.Memo_CplusplusKeyPress(Sender: TObject; var Key: Char);
+begin
+    If (key = '\') then
+    begin
+        Form1.Show;
+    end;
+end;
+
+procedure TForm2.ComboBox1KeyPress(Sender: TObject; var Key: Char);
+begin
+    If (key = '\') then
+    begin
+        Form1.Show;
+    end;
+end;
+
+procedure TForm2.SpeedButton13Click(Sender: TObject);
+begin
+  Form2.Image_Selection.Picture.Bitmap := Form2.SpeedButton13.Glyph;
+  Form1.Show;
+end;
+
+procedure TForm2.SpeedButton14Click(Sender: TObject);
+begin
+  if (Form2.CheckBox_Selettore.Checked = false) then
+  begin
+    Form2.CheckBox_Selettore.Checked := true;
+  end else
+  begin
+    Form2.CheckBox_Selettore.Checked := false;
+  end;
+end;
+
+end.

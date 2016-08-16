@@ -1,0 +1,20 @@
+Form1.Image1.Canvas.Pixels[X,Y]:=Form1.ColorBox1.Selected;
+                Form1.Image1.Canvas.Pixels[X + strtoint (Form1.ComboBox1.Items.Strings[Form1.ComboBox1.ItemIndex]) - 1,Y + strtoint (Form1.ComboBox1.Items.Strings[Form1.ComboBox1.ItemIndex]) - 1]:=Form1.ColorBox1.Selected;
+                Form1.Image1.Canvas.Pixels[X + strtoint (Form1.ComboBox1.Items.Strings[Form1.ComboBox1.ItemIndex]) - 1,Y]:=Form1.ColorBox1.Selected;
+                Form1.Image1.Canvas.Pixels[X,Y + strtoint (Form1.ComboBox1.Items.Strings[Form1.ComboBox1.ItemIndex]) - 1]:=Form1.ColorBox1.Selected;
+
+
+if (A[a][b] == 0)	//{Strada (arancione)}
+	color(6);
+if (A[a][b] == 5)	//{Protagonista (fucsia)}
+	color (13);
+if (A[a][b] == 8)	//{Mostro (verde)}
+	color (2);
+if (A[a][b] == 2)	//{Tesoro (giallo)}
+	color (14);
+if (A[a][b] == 7)	//{Mura (grigio)}
+	color (8);
+if (A[a][b] == 3)	//{Teletrasporto (bianco)}
+	color (15);
+if (A[a][b] == 1)	//{Morte.. (Verde Chiaro)}
+	color (11);

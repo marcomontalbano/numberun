@@ -1,0 +1,282 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{3827ED19-E4A9-4D41-B984-522EB4ACEC23}</ProjectGuid>
+    <ProjectTypeGuids>{9F340DF3-2AED-4330-AC16-78AC2D9B4738};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NumbeRun</RootNamespace>
+    <AssemblyName>NumbeRun</AssemblyName>
+    <XnaFrameworkVersion>v1.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <ApplicationIcon>NumbeRun.ico</ApplicationIcon>
+    <XNAGlobalContentPipelineAssemblies>Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll;Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll;Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll;Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</XNAGlobalContentPipelineAssemblies>
+    <XNAProjectContentPipelineAssemblies>
+    </XNAProjectContentPipelineAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Npgsql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Animation.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Animation</Name>
+    </Compile>
+    <Compile Include="CybeRun.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>CybeRun</Name>
+    </Compile>
+    <Compile Include="DevilRun.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>DevilRun</Name>
+    </Compile>
+    <Compile Include="Level.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Level</Name>
+    </Compile>
+    <Compile Include="MainPersonaggio.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>MainPersonaggio</Name>
+    </Compile>
+    <Compile Include="Maps.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Maps</Name>
+    </Compile>
+    <Compile Include="MlaRun.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>MlaRun</Name>
+    </Compile>
+    <Compile Include="Monster.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Monster</Name>
+    </Compile>
+    <Compile Include="myDataBase.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>myDataBase</Name>
+    </Compile>
+    <Compile Include="myDataBaseInformation.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>myDataBaseInformation</Name>
+    </Compile>
+    <Compile Include="PhantRun.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>PhantRun</Name>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>AssemblyInfo</Name>
+    </Compile>
+    <Compile Include="Program.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Program</Name>
+    </Compile>
+    <Compile Include="Game1.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>Game1</Name>
+    </Compile>
+    <Compile Include="TextWriter.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>TextWriter</Name>
+    </Compile>
+    <Compile Include="VariabiliGlobali.cs">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>VariabiliGlobali</Name>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NumbeRun.ico">
+      <XNAUseContentPipeline>false</XNAUseContentPipeline>
+      <Name>NumbeRun</Name>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NumbeRun_music.xap">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>XactImporter</Importer>
+      <Processor>XactProcessor</Processor>
+      <Name>NumbeRun_music</Name>
+    </Content>
+    <Content Include="textures\crediti.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>crediti</Name>
+    </Content>
+    <Content Include="textures\faceset.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>faceset</Name>
+    </Content>
+    <Content Include="textures\femmina.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>femmina</Name>
+    </Content>
+    <Content Include="textures\fulltileset.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>fulltileset</Name>
+    </Content>
+    <Content Include="textures\fulltileset_other.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>fulltileset_other</Name>
+    </Content>
+    <Content Include="textures\gamescreen.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>gamescreen</Name>
+    </Content>
+    <Content Include="textures\gamescreen_intro.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>gamescreen_intro</Name>
+    </Content>
+    <Content Include="textures\guida.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>guida</Name>
+    </Content>
+    <Content Include="textures\highscore_tab.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>highscore_tab</Name>
+    </Content>
+    <Content Include="textures\maps.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>maps</Name>
+    </Content>
+    <Content Include="textures\maschio.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>maschio</Name>
+    </Content>
+    <Content Include="textures\menu_background.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>menu_background</Name>
+    </Content>
+    <Content Include="textures\menu_text.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>menu_text</Name>
+    </Content>
+    <Content Include="textures\mostro1.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>mostro1</Name>
+    </Content>
+    <Content Include="textures\mostro2.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>mostro2</Name>
+    </Content>
+    <Content Include="textures\mostro3.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>mostro3</Name>
+    </Content>
+    <Content Include="textures\mostro4.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>mostro4</Name>
+    </Content>
+    <Content Include="textures\mostro5.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>mostro5</Name>
+    </Content>
+    <Content Include="textures\player_online.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>player_online</Name>
+    </Content>
+    <Content Include="textures\TextSet.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>TextSet</Name>
+    </Content>
+    <Content Include="textures\TextSet_Word.png">
+      <XNAUseContentPipeline>true</XNAUseContentPipeline>
+      <Importer>TextureImporter</Importer>
+      <Processor>SpriteTextureProcessor</Processor>
+      <Name>TextSet_Word</Name>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA\Game Studio Express\v1.0\Microsoft.Xna.ContentPipeline.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA\Game Studio Express\v1.0\Microsoft.Xna.Common.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

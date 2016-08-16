@@ -1,0 +1,11 @@
+10 - Nero
+9 - Verde Scuro
+8 - Verde Chiaro
+7 - Grigio Chiaro
+6 - Olive
+5 - Fucsia
+4 - Maroon
+3 - White
+2 - Yellow
+1 - Azzurro
+0 - Blue

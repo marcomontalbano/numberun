@@ -1,0 +1,66 @@
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\crediti.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\faceset.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\femmina.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\fulltileset.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\fulltileset_other.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\gamescreen.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\gamescreen_intro.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\guida.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\highscore_tab.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\maps.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\maschio.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\menu_background.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\menu_text.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\mostro1.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\mostro2.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\mostro3.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\mostro4.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\mostro5.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\player_online.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\TextSet.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\textures\TextSet_Word.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\fx\suneffect.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\NumbeRun_music.xgs
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\Wave Bank.xwb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\Sound Bank.xsb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\NumbeRun.exe
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\NumbeRun.pdb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\Mono.Security.dll
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\bin\x86\Debug\Npgsql.dll
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\obj\x86\Debug\NumbeRun_music.xml
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\obj\x86\Debug\NumbeRun.exe
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0\NumbeRun with XNA\obj\x86\Debug\NumbeRun.pdb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\crediti.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\faceset.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\femmina.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\fulltileset.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\fulltileset_other.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\gamescreen.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\gamescreen_intro.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\guida.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\highscore_tab.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\maps.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\maschio.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\menu_background.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\menu_text.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\mostro1.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\mostro2.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\mostro3.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\mostro4.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\mostro5.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\player_online.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\TextSet.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\textures\TextSet_Word.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\fx\suneffect.xnb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\NumbeRun_music.xgs
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\Wave Bank.xwb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\Sound Bank.xsb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\NumbeRun.exe
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\NumbeRun.pdb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\Mono.Security.dll
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\bin\x86\Debug\Npgsql.dll
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\obj\x86\Debug\NumbeRun_music.xml
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\obj\x86\Debug\NumbeRun.exe
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\NumbeRun with XNA\obj\x86\Debug\NumbeRun.pdb

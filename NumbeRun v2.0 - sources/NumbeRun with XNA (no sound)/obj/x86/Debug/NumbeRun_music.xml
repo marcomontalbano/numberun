@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <WaveBank Name="Wave Bank">Wave Bank
+{
+    Name = Wave Bank;
+    Xbox File = Xbox\Wave Bank.xwb;
+    Windows File = Win\Wave Bank.xwb;
+    Seek Tables = 1;
+    Compression Preset Name = &lt;none&gt;;
+    Xbox Bank Last Modified Low = 0;
+    Xbox Bank Last Modified High = 0;
+    PC Bank Last Modified Low = 8210502;
+    PC Bank Last Modified High = 29840413;
+
+    Wave
+    {
+        Name = Menu01;
+        File = music\Menu01.wav;
+        Build Settings Last Modified Low = 3805848500;
+        Build Settings Last Modified High = 29840250;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 12000;
+            Bits Per Sample = 0;
+            Play Region Offset = 44;
+            Play Region Length = 840372;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3595848500;
+            Last Modified High = 29840250;
+        }
+    }
+
+    Wave
+    {
+        Name = Menu02;
+        File = music\Menu02.wav;
+        Build Settings Last Modified Low = 1500049108;
+        Build Settings Last Modified High = 29840302;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 12000;
+            Bits Per Sample = 0;
+            Play Region Offset = 44;
+            Play Region Length = 978578;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1145361608;
+            Last Modified High = 29840302;
+        }
+    }
+
+    Wave
+    {
+        Name = Mus021;
+        File = music\Mus021.wav;
+        Build Settings Last Modified Low = 1500049108;
+        Build Settings Last Modified High = 29840302;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 12000;
+            Bits Per Sample = 0;
+            Play Region Offset = 44;
+            Play Region Length = 920620;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1169424108;
+            Last Modified High = 29840302;
+        }
+    }
+
+    Wave
+    {
+        Name = Esci;
+        File = music\Esci.wav;
+        Build Settings Last Modified Low = 2167185740;
+        Build Settings Last Modified High = 29840310;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 22050;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 9474;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 866136064;
+            Last Modified High = 29805716;
+        }
+    }
+
+    Wave
+    {
+        Name = Entra;
+        File = music\Entra.wav;
+        Build Settings Last Modified Low = 2167185740;
+        Build Settings Last Modified High = 29840310;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 22050;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 70404;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 866136064;
+            Last Modified High = 29805716;
+        }
+    }
+
+    Wave
+    {
+        Name = CreditiFinali;
+        File = music\CreditiFinali.wav;
+        Build Settings Last Modified Low = 2483188648;
+        Build Settings Last Modified High = 29840312;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 12000;
+            Bits Per Sample = 0;
+            Play Region Offset = 44;
+            Play Region Length = 2530042;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2344907398;
+            Last Modified High = 29840312;
+        }
+    }
+
+    Wave
+    {
+        Name = Mus024;
+        File = music\Mus024.wav;
+        Build Settings Last Modified Low = 3645844898;
+        Build Settings Last Modified High = 29840312;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 12000;
+            Bits Per Sample = 0;
+            Play Region Offset = 44;
+            Play Region Length = 925080;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3527094898;
+            Last Modified High = 29840312;
+        }
+    }
+
+    Wave
+    {
+        Name = UseCrystalPotion;
+        File = music\UseCrystalPotion.wav;
+        Build Settings Last Modified Low = 2156270094;
+        Build Settings Last Modified High = 29840411;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 22050;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 33868;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 866136064;
+            Last Modified High = 29805716;
+        }
+    }
+
+    Wave
+    {
+        Name = -1Life;
+        File = music\-1Life.wav;
+        Build Settings Last Modified Low = 2156270094;
+        Build Settings Last Modified High = 29840411;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 22050;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 56962;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 866136064;
+            Last Modified High = 29805716;
+        }
+    }
+
+    Wave
+    {
+        Name = Tesori;
+        File = music\Tesori.wav;
+        Build Settings Last Modified Low = 2156270094;
+        Build Settings Last Modified High = 29840411;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 22050;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 176400;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 866136064;
+            Last Modified High = 29805716;
+        }
+    }
+
+    Wave
+    {
+        Name = MoveCursor;
+        File = music\MoveCursor.wav;
+        Build Settings Last Modified Low = 2741426344;
+        Build Settings Last Modified High = 29840411;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 22050;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 26440;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 866136064;
+            Last Modified High = 29805716;
+        }
+    }
+
+    Wave
+    {
+        Name = CrystalPotion;
+        File = music\CrystalPotion.wav;
+        Build Settings Last Modified Low = 4021615298;
+        Build Settings Last Modified High = 29840412;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 22050;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 4800;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 866136064;
+            Last Modified High = 29805716;
+        }
+    }
+}
+
+</WaveBank>
+</Sections>

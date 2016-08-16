@@ -1,0 +1,243 @@
+unit A4;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons;
+
+type
+  TForm4 = class(TForm)
+    ComboBox1: TComboBox;
+    Label21: TLabel;
+    Memo1: TMemo;
+    SpeedButton1: TSpeedButton;
+    Memo_Intestazione: TMemo;
+    procedure FormCreate(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form4: TForm4;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm4.FormCreate(Sender: TObject);
+var
+  i: integer;
+begin
+    //Inserisci numeri in ComboBox
+    i := 0;
+    repeat
+      i := i + 1;
+      Form4.ComboBox1.Items.Append(IntToStr(i));
+    until (i = 25);
+    //Seleziona ComboBox
+    Form4.ComboBox1.ItemIndex := 0;
+end;
+
+procedure TForm4.SpeedButton1Click(Sender: TObject);
+var
+    i, j1, j2: integer;
+begin
+    //Scrittura dell'intestazione
+    Form4.Memo1.Lines.Text := Form4.Memo_Intestazione.Lines.Text;
+    //Scrittura intestazione funzioni
+    i := 0;
+    repeat
+      i := i + 1;
+      Form4.Memo1.Lines.Append('void mov_mostro8_' + IntToStr(i) + '();');
+    until (i = Form4.ComboBox1.ItemIndex + 1);
+    //Spazio vuoto
+      Form4.Memo1.Lines.Append('');
+      Form4.Memo1.Lines.Append('');
+      Form4.Memo1.Lines.Append('');
+    //Variabili
+      Form4.Memo1.Lines.Append('//Dichiarazione delle varibili globali del mostro');
+      Form4.Memo1.Lines.Append('int mostri;				//Numero dei mostri della mappa in questione');
+      Form4.Memo1.Lines.Append('');
+      //Variabili di mostro
+      i := 0;
+      repeat
+        i := i + 1;
+        randomize();
+        Form4.Memo1.Lines.Append('int o' + IntToStr(i) + ', k' + IntToStr(i) + ';				//Posizione ' + IntToStr(i) + 'a mostro');
+      until (i = Form4.ComboBox1.ItemIndex + 1);
+    //Spazio
+      Form4.Memo1.Lines.Append('');
+    //Funzione controllo_mostri_nel_gioco()
+      Form4.Memo1.Lines.Append('//Controlla quanti saranno i mostri usati nel livello selezionato');
+      Form4.Memo1.Lines.Append('void controllo_mostri_nel_gioco()');
+      Form4.Memo1.Lines.Append('{');
+      Form4.Memo1.Lines.Append('	//Gestione del movimento mostri nella mappa');
+      i := 0;
+      j1 := 0;
+      j2 := 0;
+      repeat
+        i := i + 1;
+        Form4.Memo1.Lines.Append('	if (mostri == ' + IntToStr(i) + ')');
+        Form4.Memo1.Lines.Append('	{');
+        j2 := j2 + 1;
+        repeat
+          j1 := j1 + 1;
+          Form4.Memo1.Lines.Append('		mov_mostro8_' + IntToStr(j1) + '();');
+        until (j1 = j2);
+        Form4.Memo1.Lines.Append('	}');
+        j1 := 0;
+      until (i = Form4.ComboBox1.ItemIndex + 1);
+      Form4.Memo1.Lines.Append('}');
+    //Spazio
+      Form4.Memo1.Lines.Append('');
+    //Funzione controllo_collisione_con_mostro()
+      Form4.Memo1.Lines.Append('//Gestione delle collisioni del personaggio con i mostri');
+      Form4.Memo1.Lines.Append('void controllo_collisione_con_mostro()');
+      Form4.Memo1.Lines.Append('{');
+      i := 0;
+      repeat
+        i := i + 1;
+        Form4.Memo1.Lines.Append('	if (((i == o' + IntToStr(i) + ') && (j == k' + IntToStr(i) + ')) && (god_mode == false))');
+        Form4.Memo1.Lines.Append('		collisione = true;');
+      until (i = Form4.ComboBox1.ItemIndex + 1);
+      Form4.Memo1.Lines.Append('}');
+    //Spazio
+      Form4.Memo1.Lines.Append('');
+    //Funzione controlla_punteggio_mostri()
+      Form4.Memo1.Lines.Append('//Punteggio dei mostri');
+      Form4.Memo1.Lines.Append('void controlla_punteggio_mostri()');
+      Form4.Memo1.Lines.Append('{');
+      i := 0;
+      repeat
+        i := i + 1;
+        Form4.Memo1.Lines.Append('	if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 2)');
+        Form4.Memo1.Lines.Append('	{');
+        Form4.Memo1.Lines.Append('		//Aggiornamento punteggi');
+        Form4.Memo1.Lines.Append('		score_m = score_m + 10;');
+        Form4.Memo1.Lines.Append('		scoreTOT_m = scoreTOT_m + 10;');
+        Form4.Memo1.Lines.Append('	}');
+      until (i = Form4.ComboBox1.ItemIndex + 1);
+      Form4.Memo1.Lines.Append('}');
+    //Spazio
+      Form4.Memo1.Lines.Append('');
+    //Funzione //{Movimento del mostro (8)}
+      i := 0;
+      repeat
+        i := i + 1;
+        Form4.Memo1.Lines.Append('//{Movimento del mostro (8) ' + IntToStr(i) + '}');
+        Form4.Memo1.Lines.Append('void mov_mostro8_' + IntToStr(i) + '()');
+        Form4.Memo1.Lines.Append('{');
+        Form4.Memo1.Lines.Append('	int mov;');
+        Form4.Memo1.Lines.Append('');
+        Form4.Memo1.Lines.Append('	//RANDOM CASUALE');
+        Form4.Memo1.Lines.Append('	mov =  (rand()%4)+1;');
+        Form4.Memo1.Lines.Append('');
+        Form4.Memo1.Lines.Append('	switch(mov)');
+        Form4.Memo1.Lines.Append('	{');
+        Form4.Memo1.Lines.Append('		//{Movimento UP}');
+        Form4.Memo1.Lines.Append('		case (1):');
+        Form4.Memo1.Lines.Append('		{');
+        Form4.Memo1.Lines.Append('			A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] = 0;');
+        Form4.Memo1.Lines.Append('			o' + IntToStr(i) + '--;');
+        Form4.Memo1.Lines.Append('			//Caso collisione muro');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 7)');
+        Form4.Memo1.Lines.Append('				o' + IntToStr(i) + '++;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione personaggio');
+        Form4.Memo1.Lines.Append('			if ((A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 5) && (god_mode == false))');
+        Form4.Memo1.Lines.Append('				collisione = true;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione ostacolo');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 1)');
+        Form4.Memo1.Lines.Append('				o' + IntToStr(i) + '++;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione fine gioco');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 9)');
+        Form4.Memo1.Lines.Append('				o' + IntToStr(i) + '++;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione crystal potion');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 3)');
+        Form4.Memo1.Lines.Append('				o' + IntToStr(i) + '++;');
+        Form4.Memo1.Lines.Append('');
+        Form4.Memo1.Lines.Append('			break;');
+        Form4.Memo1.Lines.Append('		}');
+        Form4.Memo1.Lines.Append('		//{Movimento DOWN}');
+        Form4.Memo1.Lines.Append('		case (2):');
+        Form4.Memo1.Lines.Append('		{');
+        Form4.Memo1.Lines.Append('			A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] = 0;');
+        Form4.Memo1.Lines.Append('			o' + IntToStr(i) + '++;');
+        Form4.Memo1.Lines.Append('			//Caso collisione muro');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 7)');
+        Form4.Memo1.Lines.Append('				o' + IntToStr(i) + '--;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione personaggio');
+        Form4.Memo1.Lines.Append('			if ((A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 5) && (god_mode == false))');
+        Form4.Memo1.Lines.Append('				collisione = true;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione ostacolo');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 1)');
+        Form4.Memo1.Lines.Append('				o' + IntToStr(i) + '--;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione fine gioco');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 9)');
+        Form4.Memo1.Lines.Append('				o' + IntToStr(i) + '--;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione crystal potion');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 3)');
+        Form4.Memo1.Lines.Append('				o' + IntToStr(i) + '--;');
+        Form4.Memo1.Lines.Append('');
+        Form4.Memo1.Lines.Append('			break;');
+        Form4.Memo1.Lines.Append('		}');
+        Form4.Memo1.Lines.Append('		//{Movimento RIGHT}');
+        Form4.Memo1.Lines.Append('		case (3):');
+        Form4.Memo1.Lines.Append('		{');
+        Form4.Memo1.Lines.Append('			A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] = 0;');
+        Form4.Memo1.Lines.Append('			k' + IntToStr(i) + '++;');
+        Form4.Memo1.Lines.Append('			//Caso collisione muro');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 7)');
+        Form4.Memo1.Lines.Append('				k' + IntToStr(i) + '--;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione personaggio');
+        Form4.Memo1.Lines.Append('			if ((A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 5) && (god_mode == false))');
+        Form4.Memo1.Lines.Append('				collisione = true;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione ostacolo');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 1)');
+        Form4.Memo1.Lines.Append('				k' + IntToStr(i) + '--;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione fine gioco');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 9)');
+        Form4.Memo1.Lines.Append('				k' + IntToStr(i) + '--;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione crystal potion');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 3)');
+        Form4.Memo1.Lines.Append('				k' + IntToStr(i) + '--;');
+        Form4.Memo1.Lines.Append('');
+        Form4.Memo1.Lines.Append('			break;');
+        Form4.Memo1.Lines.Append('		}');
+        Form4.Memo1.Lines.Append('		//{Movimento LEFT}');
+        Form4.Memo1.Lines.Append('		case (4):');
+        Form4.Memo1.Lines.Append('		{');
+        Form4.Memo1.Lines.Append('			A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] = 0;');
+        Form4.Memo1.Lines.Append('			k' + IntToStr(i) + '--;');
+        Form4.Memo1.Lines.Append('			//Caso collisione muro');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 7)');
+        Form4.Memo1.Lines.Append('				k' + IntToStr(i) + '++;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione personaggio');
+        Form4.Memo1.Lines.Append('			if ((A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 5) && (god_mode == false))');
+        Form4.Memo1.Lines.Append('				collisione = true;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione ostacolo');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 1)');
+        Form4.Memo1.Lines.Append('				k' + IntToStr(i) + '++;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione fine gioco');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 9)');
+        Form4.Memo1.Lines.Append('				k' + IntToStr(i) + '++;');
+        Form4.Memo1.Lines.Append('			//Caso di collizione crystal potion');
+        Form4.Memo1.Lines.Append('			if (A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] == 3)');
+        Form4.Memo1.Lines.Append('				k' + IntToStr(i) + '++;');
+        Form4.Memo1.Lines.Append('');
+        Form4.Memo1.Lines.Append('			break;');
+        Form4.Memo1.Lines.Append('		}');
+        Form4.Memo1.Lines.Append('	}');
+        Form4.Memo1.Lines.Append('	punteggio();');
+        Form4.Memo1.Lines.Append('	A[o' + IntToStr(i) + '][k' + IntToStr(i) + '] = 8;');
+        Form4.Memo1.Lines.Append('	Disegna_Veloce(o' + IntToStr(i) + ',k' + IntToStr(i) + ');');
+        Form4.Memo1.Lines.Append('}');
+        //Spazio
+          Form4.Memo1.Lines.Append('');
+      until (i = Form4.ComboBox1.ItemIndex + 1);
+end;
+
+end.

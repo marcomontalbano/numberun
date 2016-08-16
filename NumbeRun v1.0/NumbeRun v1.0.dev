@@ -1,0 +1,199 @@
+[Project]
+FileName=NumbeRun v1.0.dev
+Name=NumbeRun v1.0
+Type=1
+Ver=2
+ObjFiles=
+Includes=
+Libs=
+PrivateResource=NumbeRun_v1.0_private.rc
+ResourceIncludes=
+MakeIncludes=
+Compiler=
+CppCompiler=
+Linker=
+IsCpp=1
+Icon=NumbeRun v1.0.ico
+ExeOutput=
+ObjectOutput=
+LogOutput=
+LogOutputEnabled=0
+OverrideOutput=0
+OverrideOutputName=NumbeRun v1.0.exe
+HostApplication=
+UseCustomMakefile=0
+CustomMakefile=
+CommandLine=
+Folders=
+IncludeVersionInfo=1
+SupportXPThemes=0
+CompilerSet=0
+CompilerSettings=0000000000000000000000000
+UnitCount=14
+
+[VersionInfo]
+Major=1
+Minor=0
+Release=0
+Build=0
+LanguageID=1040
+CharsetID=1252
+CompanyName=
+FileVersion=1.0.0.0
+FileDescription=NumbeRun v1.0
+InternalName=NumbeRun
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=NumbeRun v1.0
+ProductName=NumbeRun v1.0
+ProductVersion=1.0.0.0
+AutoIncBuildNr=0
+SyncProduct=1
+
+[Unit1]
+FileName=NumbeRun.cpp
+CompileCpp=1
+Folder=NumbeRun
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit2]
+FileName=NUMBERUN.H
+CompileCpp=1
+Folder=NumbeRun
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit3]
+FileName=Crediti del Gioco.txt
+Folder=NumbeRun v1.0
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit4]
+FileName=CREDITI.H
+CompileCpp=1
+Folder=NumbeRun v1.0
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit5]
+FileName=CREDITI_GRAFICI.H
+CompileCpp=1
+Folder=NumbeRun v1.0
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit6]
+FileName=CREDITI_TESTO.H
+CompileCpp=1
+Folder=NumbeRun v1.0
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit7]
+FileName=GAME_OVER.H
+CompileCpp=1
+Folder=NumbeRun v1.0
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit8]
+FileName=GUIDA.H
+CompileCpp=1
+Folder=NumbeRun v1.0
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit9]
+FileName=Legenda colori per la grafica.txt
+Folder=NumbeRun v1.0
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit10]
+FileName=LEVEL.H
+Folder=NumbeRun v1.0
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+CompileCpp=1
+
+[Unit11]
+FileName=MENU.H
+CompileCpp=1
+Folder=NumbeRun v1.0
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit12]
+FileName=MONSTER.H
+CompileCpp=1
+Folder=NumbeRun v1.0
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit13]
+FileName=TRUCCHI.H
+CompileCpp=1
+Folder=NumbeRun v1.0
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit14]
+FileName=Trucchi.txt
+CompileCpp=1
+Folder=NumbeRun v1.0
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit15]
+FileName=Trucchi.txt
+Folder=NumbeRun v1.0
+Compile=0
+Link=0
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
