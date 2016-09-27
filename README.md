@@ -1,6 +1,9 @@
 NumbeRun
 ========
 
+[![NumbeRun trailer (new) - Marco Montalbano](docs/assets/numberun_2__youtube.jpg)](https://www.youtube.com/watch?v=oRdzL2DX0yU "NumbeRun trailer (new) - Marco Montalbano")
+
+
 Plot
 ----
 
@@ -26,8 +29,7 @@ The first release of the complete game was in C++ using a Windows Console, a big
 
 It was my very first project, the very first idea I worked on, just after starting high school. Every time I discovered a new language I took the chance to re-write it, so as to master the new knowledge. That's why there are so many versions of the same game. It evolved along with my competence.
 
-![NumbeRun v1 - menu](docs/assets/numberun_1__menu.jpg)![NumbeRun v1 - game1](docs/assets/numberun_1__game1.jpg)
-
+![NumbeRun v1 - menu](docs/assets/numberun_1__menu.jpg)!
 
 
 Development
