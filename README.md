@@ -1,6 +1,10 @@
 NumbeRun
 ========
 
+NumbeRun is a puzzle game I developed in 2007 for my school-leaving examination.
+
+The game was developed in Microsoft Visual C# 2005 using the Microsoft XNA library.
+
 [![NumbeRun trailer (new) - Marco Montalbano](docs/assets/numberun_2__youtube.jpg)](https://www.youtube.com/watch?v=oRdzL2DX0yU "NumbeRun trailer (new) - Marco Montalbano")
 
 
@@ -17,6 +21,10 @@ Now you are ready to follow FiveRun in this adventure.
 
 One last friendly piece of advice: FiveRun can't swim!
 
+
+Screenshots
+-----------
+
 ![NumbeRun v2 - menu](docs/assets/numberun_2__menu.jpg) ![NumbeRun v2 - guide](docs/assets/numberun_2__guide.jpg) ![NumbeRun v2 - game1](docs/assets/numberun_2__game1.jpg) ![NumbeRun v2 - game2](docs/assets/numberun_2__game2.jpg)
 
 
@@ -29,7 +37,7 @@ The first release of the complete game was in C++ using a Windows Console, a big
 
 It was my very first project, the very first idea I worked on, just after starting high school. Every time I discovered a new language I took the chance to re-write it, so as to master the new knowledge. That's why there are so many versions of the same game. It evolved along with my competence.
 
-![NumbeRun v1 - menu](docs/assets/numberun_1__menu.jpg)!
+![NumbeRun v1 - menu](docs/assets/numberun_1__menu.jpg)
 
 
 Development
