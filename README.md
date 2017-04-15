@@ -1,9 +1,7 @@
 NumbeRun
 ========
 
-NumbeRun is a puzzle game I developed in 2007 for my school-leaving examination.
-
-The game was developed in Microsoft Visual C# 2005 using the Microsoft XNA library.
+NumbeRun is a puzzle game I developed in 2007 for my school-leaving examination. The game was developed in Microsoft Visual C# 2005 using the Microsoft XNA library.
 
 [![NumbeRun trailer (new) - Marco Montalbano](docs/assets/numberun_2__youtube.jpg)](https://www.youtube.com/watch?v=oRdzL2DX0yU "NumbeRun trailer (new) - Marco Montalbano")
 
@@ -26,6 +24,14 @@ Screenshots
 -----------
 
 ![NumbeRun v2 - menu](docs/assets/numberun_2__menu.jpg) ![NumbeRun v2 - guide](docs/assets/numberun_2__guide.jpg) ![NumbeRun v2 - game1](docs/assets/numberun_2__game1.jpg) ![NumbeRun v2 - game2](docs/assets/numberun_2__game2.jpg)
+
+
+Play Now
+--------
+
+[Download NumbeRun v2.1](https://github.com/marcomontalbano/numberun/raw/master/NumbeRun%20v2.1.zip) and play now on Windows 10.
+
+Before play, you need to install DirectX and XNA from `setup` folder.
 
 
 Other versions
