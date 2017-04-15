@@ -1,5 +1,6 @@
 # default
 Thumbs.db*
+.DS_Store
 
 # NumbeRun
 High Score.txt
