@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("NumbeRun")]
 [assembly: AssemblyProduct("")]
 [assembly: AssemblyDescription("")]
-[assembly: AssemblyCompany("RPGames")]
+[assembly: AssemblyCompany("Marco Montalbano")]
 
-[assembly: AssemblyCopyright("Copyright © 2004-2007")]
+[assembly: AssemblyCopyright("Copyright © 2004-2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -30,4 +30,4 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyVersion("2.1.0.0")]
