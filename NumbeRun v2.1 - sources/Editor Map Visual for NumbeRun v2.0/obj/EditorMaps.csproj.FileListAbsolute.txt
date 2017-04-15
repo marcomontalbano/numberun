@@ -1,0 +1,38 @@
+E:\RPGames NumbeRun\EditorMaps\obj\Debug\EditorMaps.exe
+E:\RPGames NumbeRun\EditorMaps\obj\Debug\EditorMaps.pdb
+E:\RPGames NumbeRun\EditorMaps\bin\Debug\EditorMaps.exe
+E:\RPGames NumbeRun\EditorMaps\bin\Debug\EditorMaps.pdb
+E:\RPGames NumbeRun\EditorMaps\obj\Debug\ResolveAssemblyReference.cache
+E:\RPGames NumbeRun\EditorMaps\obj\Debug\EditorMaps.Form1.resources
+E:\RPGames NumbeRun\EditorMaps\obj\Debug\EditorMaps.Form2.resources
+E:\RPGames NumbeRun\EditorMaps\obj\Debug\EditorMaps.Form3.resources
+E:\RPGames NumbeRun\EditorMaps\obj\Debug\EditorMaps.Form4.resources
+E:\RPGames NumbeRun\EditorMaps\obj\Debug\EditorMaps.Main.resources
+E:\RPGames NumbeRun\EditorMaps\obj\Debug\EditorMaps.Properties.Resources.resources
+E:\RPGames NumbeRun\EditorMaps\obj\Debug\EditorMaps.csproj.GenerateResource.Cache
+E:\RPGames NumbeRun\EditorMaps\bin\Release\EditorMaps.exe
+E:\RPGames NumbeRun\EditorMaps\bin\Release\EditorMaps.pdb
+E:\RPGames NumbeRun\EditorMaps\obj\Release\ResolveAssemblyReference.cache
+E:\RPGames NumbeRun\EditorMaps\obj\Release\EditorMaps.Form1.resources
+E:\RPGames NumbeRun\EditorMaps\obj\Release\EditorMaps.Form2.resources
+E:\RPGames NumbeRun\EditorMaps\obj\Release\EditorMaps.Form3.resources
+E:\RPGames NumbeRun\EditorMaps\obj\Release\EditorMaps.Form4.resources
+E:\RPGames NumbeRun\EditorMaps\obj\Release\EditorMaps.Main.resources
+E:\RPGames NumbeRun\EditorMaps\obj\Release\EditorMaps.Properties.Resources.resources
+E:\RPGames NumbeRun\EditorMaps\obj\Release\EditorMaps.csproj.GenerateResource.Cache
+E:\RPGames NumbeRun\EditorMaps\obj\Release\EditorMaps.exe
+E:\RPGames NumbeRun\EditorMaps\obj\Release\EditorMaps.pdb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\obj\Release\EditorMaps.exe
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\obj\Release\EditorMaps.pdb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\bin\Debug\EditorMaps.exe
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\bin\Debug\EditorMaps.pdb
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\obj\Debug\EditorMaps.Form1.resources
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\obj\Debug\EditorMaps.Form2.resources
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\obj\Debug\EditorMaps.Form3.resources
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\obj\Debug\EditorMaps.Form4.resources
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\obj\Debug\EditorMaps.Main.resources
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\obj\Debug\EditorMaps.Properties.Resources.resources
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\obj\Debug\EditorMaps.csproj.GenerateResource.Cache
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\obj\Debug\EditorMaps.exe
+C:\Users\Marco Montalbano\Sites\numberun\NumbeRun v2.0 - sources\Editor Map Visual for NumbeRun v2.0\obj\Debug\EditorMaps.pdb
