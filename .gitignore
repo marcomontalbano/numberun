@@ -9,3 +9,6 @@ High Score.txt
 *.win
 *.layout
 *.o
+
+#
+/*.zip
