@@ -1,33 +1,33 @@
-Development Notes
------------------
+NumbeRun - Development Notes
+============================
 
 
-### Important Notice
+## Important Notice
 
 I'm sorry for the quality of the code, but all projects below are very old.
 
 I developed them when I started to study informatics at school.
 
 
-### NumberRun v0.1
+## NumberRun v0.1
 
 * Orwell Dev-C++ 5.7.0 (MinGW32) - [link](http://orwelldevcpp.blogspot.it/)
 * Windows XP / 7 / 8
 
 
-### NumberRun v0.2
+## NumberRun v0.2
 
 * Orwell Dev-C++ 5.7.0 (MinGW32) - [link](http://orwelldevcpp.blogspot.it/)
 * Windows XP / 7 / 8
 
 
-### NumberRun v1.0
+## NumberRun v1.0
 
 * Orwell Dev-C++ 5.7.0 (MinGW32) - [link](http://orwelldevcpp.blogspot.it/)
 * Windows XP / 7 / 8
 
 
-### NumberRun v1.0g
+## NumberRun v1.0g
 
 * Orwell Dev-C++ 5.7.0 (MinGW32) - [link](http://orwelldevcpp.blogspot.it/)
 * glut-3.7.6
@@ -36,17 +36,17 @@ I developed them when I started to study informatics at school.
 * **source damaged**
 
 
-### Editor Map for NumbeRun v1.0
+## Editor Map for NumbeRun v1.0
 
 * Borland Delphy 7
 
 
-### Editor Map for NumbeRun v2.0
+## Editor Map for NumbeRun v2.0
 
 * Borland Delphy 7
 
 
-### NumbeRun v2.0
+## NumbeRun v2.0
 
 * Visual C# 2005 Express Edition - [link](http://go.microsoft.com/fwlink/?LinkId=51411&clcid=0x409)
 * Visual C# Express Edition SP1 - VS80sp1-KB926749-X86-INTL.exe - [link](http://www.microsoft.com/it-it/download/details.aspx?id=804)
@@ -55,7 +55,7 @@ I developed them when I started to study informatics at school.
 * Windows 8.1
 
 
-### Visual Editor Map for NumbeRun v2.0
+## Visual Editor Map for NumbeRun v2.0
 
 * Visual C# 2005 Express Edition - [link](http://go.microsoft.com/fwlink/?LinkId=51411&clcid=0x409)
 * Visual C# Express Edition SP1 - VS80sp1-KB926749-X86-INTL.exe - [link](http://www.microsoft.com/it-it/download/details.aspx?id=804)
