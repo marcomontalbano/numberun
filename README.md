@@ -1,9 +1,29 @@
 NumbeRun
 ========
 
-NumbeRun is a puzzle game I developed in 2007 for my school-leaving examination. The game was developed in Microsoft Visual C# 2005 using the Microsoft XNA library.
+NumbeRun is a puzzle game I developed in 2007 for my school-leaving examination. The game was developed in [Microsoft Visual C#](http://www.visualstudio.com/) 2005 using the [Microsoft XNA](https://it.wikipedia.org/wiki/Microsoft_XNA) library.
 
 [![NumbeRun trailer (new) - Marco Montalbano](docs/assets/numberun_2__youtube.jpg)](https://www.youtube.com/watch?v=oRdzL2DX0yU "NumbeRun trailer (new) - Marco Montalbano")
+
+
+Play Now
+--------
+
+[Download NumbeRun](https://github.com/marcomontalbano/numberun/releases/latest) and play now on Windows 10.
+
+Before play, you need to install DirectX and XNA from `setup` folder.
+
+_system requirements:_
+
+- [Microsoft .NET Framework 2.0](http://www.microsoft.com/it-it/download/details.aspx?id=1639)
+- Microsoft XNA 1.0
+- Windows XP / 7 / 8 / 8.1 / 10
+
+
+Screenshots
+-----------
+
+![NumbeRun v2 - menu](docs/assets/numberun_2__menu.jpg) ![NumbeRun v2 - guide](docs/assets/numberun_2__guide.jpg) ![NumbeRun v2 - game1](docs/assets/numberun_2__game1.jpg) ![NumbeRun v2 - game2](docs/assets/numberun_2__game2.jpg)
 
 
 Plot
@@ -20,20 +40,6 @@ Now you are ready to follow FiveRun in this adventure.
 One last friendly piece of advice: FiveRun can't swim!
 
 
-Screenshots
------------
-
-![NumbeRun v2 - menu](docs/assets/numberun_2__menu.jpg) ![NumbeRun v2 - guide](docs/assets/numberun_2__guide.jpg) ![NumbeRun v2 - game1](docs/assets/numberun_2__game1.jpg) ![NumbeRun v2 - game2](docs/assets/numberun_2__game2.jpg)
-
-
-Play Now
---------
-
-[Download NumbeRun v2.1](https://github.com/marcomontalbano/numberun/raw/master/NumbeRun%20v2.1.zip) and play now on Windows 10.
-
-Before play, you need to install DirectX and XNA from `setup` folder.
-
-
 Other versions
 --------------
 
@@ -43,68 +49,12 @@ The first release of the complete game was in C++ using a Windows Console, a big
 
 It was my very first project, the very first idea I worked on, just after starting high school. Every time I discovered a new language I took the chance to re-write it, so as to master the new knowledge. That's why there are so many versions of the same game. It evolved along with my competence.
 
-![NumbeRun v1 - menu](docs/assets/numberun_1__menu.jpg)
+![NumbeRun v1 - menu](docs/assets/numberun_1__menu.jpg) ![NumbeRun v1 - game 1](docs/assets/numberun_1__game1.jpg) ![NumbeRun v1 - game 2](docs/assets/numberun_1__game2.jpg) ![NumbeRun v1 - game over](docs/assets/numberun_1__gameover.jpg)
 
 
-Development
+Open Source
 -----------
 
+On GitHub you can find all versions. Feel free to download, build and play :)
 
-### Important Notice
-
-I'm sorry for the quality of the code, but all projects below are very old.
-
-I developed them when I started to study informatics at school.
-
-
-### NumberRun v0.1
-
-* Orwell Dev-C++ 5.7.0 (MinGW32) - [link](http://orwelldevcpp.blogspot.it/)
-* Windows XP / 7 / 8
-
-
-### NumberRun v0.2
-
-* Orwell Dev-C++ 5.7.0 (MinGW32) - [link](http://orwelldevcpp.blogspot.it/)
-* Windows XP / 7 / 8
-
-
-### NumberRun v1.0
-
-* Orwell Dev-C++ 5.7.0 (MinGW32) - [link](http://orwelldevcpp.blogspot.it/)
-* Windows XP / 7 / 8
-
-
-### NumberRun v1.0g
-
-* Orwell Dev-C++ 5.7.0 (MinGW32) - [link](http://orwelldevcpp.blogspot.it/)
-* glut-3.7.6
-* Linker=-lglut32 -lopengl32 -lglu32
-* Windows XP / 7 / 8
-* **source damaged**
-
-
-### Editor Map for NumbeRun v1.0
-
-* Borland Delphy 7
-
-
-### Editor Map for NumbeRun v2.0
-
-* Borland Delphy 7
-
-
-### NumbeRun v2.0
-
-* Visual C# 2005 Express Edition - [link](http://go.microsoft.com/fwlink/?LinkId=51411&clcid=0x409)
-* Visual C# Express Edition SP1 - VS80sp1-KB926749-X86-INTL.exe - [link](http://www.microsoft.com/it-it/download/details.aspx?id=804)
-* Microsoft XNA Game Studio Express 1.0 Refresh - [link](http://www.microsoft.com/en-us/download/details.aspx?id=25279)
-* Microsoft XNA Framework Redistributable 1.0 Refresh - [link](http://www.microsoft.com/en-us/download/details.aspx?id=2431)
-* Windows 8.1
-
-
-### Visual Editor Map for NumbeRun v2.0
-
-* Visual C# 2005 Express Edition - [link](http://go.microsoft.com/fwlink/?LinkId=51411&clcid=0x409)
-* Visual C# Express Edition SP1 - VS80sp1-KB926749-X86-INTL.exe - [link](http://www.microsoft.com/it-it/download/details.aspx?id=804)
-* Windows 8.1
+Check out the repository for source codes and binary files.
